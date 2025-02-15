@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{527248D6-B851-4C8D-8667-E2FB0A91DABF}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{DE39E491-5DDC-40F4-91D5-7F5FAF0E1884}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		CONTRIBUTING.md = CONTRIBUTING.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		icon.png = icon.png
+		LICENSE = LICENSE
+		NuGet.Config = NuGet.Config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack", "src\Elsa.Integrations.Slack\Elsa.Integrations.Slack.csproj", "{9732E404-11B5-48DB-B5D9-97997F018830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Tests", "src\Elsa.Integrations.Tests\Elsa.Integrations.Tests.csproj", "{DD8CE0DF-4B4C-4E12-A89D-B1D543FAD185}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9732E404-11B5-48DB-B5D9-97997F018830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9732E404-11B5-48DB-B5D9-97997F018830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9732E404-11B5-48DB-B5D9-97997F018830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9732E404-11B5-48DB-B5D9-97997F018830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8CE0DF-4B4C-4E12-A89D-B1D543FAD185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8CE0DF-4B4C-4E12-A89D-B1D543FAD185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8CE0DF-4B4C-4E12-A89D-B1D543FAD185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8CE0DF-4B4C-4E12-A89D-B1D543FAD185}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9732E404-11B5-48DB-B5D9-97997F018830} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{DD8CE0DF-4B4C-4E12-A89D-B1D543FAD185} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+	EndGlobalSection
+EndGlobal
