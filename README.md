@@ -81,6 +81,11 @@ Below is the current status of each integration. Checkboxes indicate implementat
 | [ ] | **Twitch** | Live stream events, chat automation, clip management | `Elsa.Integrations.Twitch` | [Open Issue](#) |
 | [ ] | **Vimeo** | Upload videos, manage privacy settings, get video analytics | `Elsa.Integrations.Vimeo` | [Open Issue](#) |
 
+### 🏭 Industrial Communication Protocols
+| Status | Integration | Description | Module Name | Issue |
+|--------|------------|-------------|-------------|-------|
+| [ ] | **OPC UA** | Browse nodes, Read/Write values, Subscribe/Unsubscribe nodes | `Elsa.Integrations.OPC.UA` | |
+| [ ] | **Modbus** | Read/Write coils, Read discrete Inputs, Read/Write registers | `Elsa.Integrations.Modbus` | |
 ---
 
 ## 📦 Structure
