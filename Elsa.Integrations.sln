@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{527248D6-B851-4C8D-8667-E2FB0A91DABF}"
 	ProjectSection(SolutionItems) = preProject
@@ -77,6 +77,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Pe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer.csproj", "{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.CommandLine", "src\Elsa.Integrations.CommandLine\Elsa.Integrations.CommandLine.csproj", "{92DC0ACE-6206-46EE-BA59-F8BAE1D92A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.CommandLine.Tests", "test\unit\Elsa.Integrations.CommandLine.Tests\Elsa.Integrations.CommandLine.Tests.csproj", "{8B135461-F593-4C0A-8BE0-B18334D3753F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +107,10 @@ Global
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC283CFE-D542-4D40-AE7F-6888B876AA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D16DD17-0BC9-476D-9B38-0A8644DD92FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A1ADCCC2-01DD-41BA-8A81-FAAE96EC729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1ADCCC2-01DD-41BA-8A81-FAAE96EC729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1ADCCC2-01DD-41BA-8A81-FAAE96EC729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -155,6 +163,14 @@ Global
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DC0ACE-6206-46EE-BA59-F8BAE1D92A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DC0ACE-6206-46EE-BA59-F8BAE1D92A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DC0ACE-6206-46EE-BA59-F8BAE1D92A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DC0ACE-6206-46EE-BA59-F8BAE1D92A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B135461-F593-4C0A-8BE0-B18334D3753F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B135461-F593-4C0A-8BE0-B18334D3753F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B135461-F593-4C0A-8BE0-B18334D3753F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B135461-F593-4C0A-8BE0-B18334D3753F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,5 +197,7 @@ Global
 		{59AE52F2-8F9F-44A2-92E8-ED4EEB895F31} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{4455BAC7-FD3C-4429-A2A2-44A83A331056} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{92DC0ACE-6206-46EE-BA59-F8BAE1D92A4D} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{8B135461-F593-4C0A-8BE0-B18334D3753F} = {AF041BAE-B45A-428B-B7F5-921CCB895558}
 	EndGlobalSection
 EndGlobal
