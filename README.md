@@ -1,3 +1,4 @@
+
 # Elsa Integrations
 
 Welcome to the **Elsa Integrations** repository! This project provides a collection of integration modules for [Elsa Workflows](https://github.com/elsa-workflows/elsa-core), enabling seamless workflow automation across various third-party services.
@@ -7,6 +8,11 @@ Welcome to the **Elsa Integrations** repository! This project provides a collect
 ## 🚀 Integration Status
 
 Below is the current status of each integration. Checkboxes indicate implementation progress.
+
+### 💎 General
+| Status | Integration | Description | Module Name | Issue |
+|--------|------------|-------------|-------------|-------|
+| [ ] | **Command Line** | Invoke, pipe, and parse output of CLI commands.  | `Elsa.Integrations.CommandLine` | #36 |
 
 ### 📨 Messaging & Communication
 | Status | Integration | Description | Module Name | Issue |

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>
+            Provides command line integration that lets you invoke, parse, and pipe terminal commands through activities.
+        </Description>
+        <PackageTags>elsa module commandline cli command shell terminal</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CliWrap" />
+      <PackageReference Include="Elsa" />
+    </ItemGroup>
+
+</Project>
