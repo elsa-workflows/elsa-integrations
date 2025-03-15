@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="AwesomeAssertions" />
+    <PackageReference Include="Elsa.EntityFrameworkCore" />
+    <PackageReference Include="Elsa.Testing.Shared.Integration" />
+    <PackageReference Include="xunit.categories" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Elsa.Integrations.CommandLine\Elsa.Integrations.CommandLine.csproj" />
+    <ProjectReference Include="..\Elsa.Integrations.Tests\Elsa.Integrations.Tests.csproj" />
+  </ItemGroup>
+
+</Project>
