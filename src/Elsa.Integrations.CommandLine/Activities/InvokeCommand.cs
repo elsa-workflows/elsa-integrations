@@ -1,5 +1,4 @@
 using System.Net;
-using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -11,6 +10,7 @@ using Elsa.Integrations.CommandLine.Services;
 using Elsa.Workflows;
 using Elsa.Workflows.Attributes;
 using Elsa.Workflows.Models;
+using Elsa.Workflows.UIHints;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -22,47 +22,24 @@ namespace Elsa.Integrations.CommandLine.Activities;
 /// See CliWrap documentation for more information: <see cref="https://github.com/Tyrrrz/CliWrap"/>
 /// </summary>
 [Activity(
-    Namespace="Elsa.Integrations.CommandLine",
-    Category = "Command Line",
+    "Elsa.Integrations.CommandLine",
     DisplayName = "Invoke Command",
-    Description = "Invokes a command line process.",
+    Description = "Invoke a command line process.",
+    Category = "Commands",
     Kind = ActivityKind.Task
 )]
 [UsedImplicitly]
 public class InvokeCommand : Activity
 {
-    private readonly ILogger<InvokeCommand> _logger;
-    private readonly ICommandRunner _commandRunner;
-    private readonly CommandLineOptions? _options;
+    private ILogger<InvokeCommand> _logger = null!;
+    private ICommandRunner _commandRunner = null!;
+    private CommandLineOptions? _options;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="InvokeCommand"/> class.
     /// </summary>
-    public InvokeCommand(
-        ILogger<InvokeCommand> logger,
-        ICommandRunner commandRunner,
-        IOptions<CommandLineOptions> options,
-        [CallerFilePath] string? source = default,
-        [CallerLineNumber] int? line = default) : base(source, line)
+    public InvokeCommand([CallerFilePath] string? source = default, [CallerLineNumber] int? line = default) : base(source, line)
     {
-        _logger = logger;
-        _commandRunner = commandRunner;
-        _options = options.Value;
-    }
-
-    public class CommandUIHandler(CommandFinder commandFinder) : IPropertyUIHandler
-    {
-        public ValueTask<IDictionary<string, object>> GetUIPropertiesAsync(
-            PropertyInfo propertyInfo, object? context, CancellationToken cancellationToken = default) =>
-            propertyInfo.Name switch
-            {
-                nameof(Command) => 
-                    ValueTask.FromResult<IDictionary<string, object>>(commandFinder
-                    .GetAvailableCommands()
-                    .ToDictionary(k => k, v => (object) v)),
-
-                _ => ValueTask.FromResult<IDictionary<string, object>>(null!)
-            };
     }
 
     /// <summary>
@@ -71,7 +48,8 @@ public class InvokeCommand : Activity
     /// </summary>
     [Input(
         Description = "The command to execute. Can be passed as a string of the executable name or a CliWrap.Command object.",
-        UIHandler = typeof(CommandUIHandler)
+        UIHandler = typeof(InvokeCommandUIHandler),
+        UIHint = InputUIHints.DropDown
     )]
     public required Input<object> Command { get; set; }
 
@@ -91,7 +69,7 @@ public class InvokeCommand : Activity
         Description = "The working directory to execute the command in."
     )]
     public Input<string?> WorkingDirectory { get; set; } = null!;
-
+    
     /// <summary>
     /// Environment variables to set for the command.
     /// </summary>
@@ -251,6 +229,10 @@ public class InvokeCommand : Activity
     /// <inheritdoc />
     protected override async ValueTask ExecuteAsync(ActivityExecutionContext context)
     {
+        _logger = context.GetRequiredService<ILogger<InvokeCommand>>();
+        _commandRunner = context.GetRequiredService<ICommandRunner>();
+        _options = context.GetRequiredService<IOptions<CommandLineOptions>>().Value;
+
         Command cmd = BuildCommand(context);
 
         try

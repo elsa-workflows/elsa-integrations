@@ -66,7 +66,7 @@ Our team will review your PR, provide feedback if necessary, and merge it once a
 
 - **Code Style**: Follow `.editorconfig` settings and existing project conventions.  
 - **Documentation**: Every new integration must have a `README.md` inside its folder explaining how to use it.  
-- **Tests**: If possible, add unit/integration tests for your changes.  
+- **Tests**: If possible, add unit/integration tests for your changes. (See [Testing guide](tests/TESTING.MD) for more info)
 
 ---
 

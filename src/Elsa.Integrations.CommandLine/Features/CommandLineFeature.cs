@@ -5,6 +5,7 @@ using Elsa.Integrations.CommandLine.Activities;
 using Elsa.Integrations.CommandLine.Contracts;
 using Elsa.Integrations.CommandLine.Options;
 using Elsa.Integrations.CommandLine.Services;
+using Elsa.Workflows;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Elsa.Integrations.CommandLine.Features;
@@ -36,7 +37,8 @@ public class CommandLineFeature(IModule module) : FeatureBase(module)
         Services
             .Configure(ConfigureOptions)
             .AddSingleton((sp) => CommandValidator.Invoke(sp))
-            .AddTransient<CommandFinder>()
+            .AddScoped<CommandFinder>()
+            .AddScoped<IPropertyUIHandler, InvokeCommandUIHandler>()
             .AddTransient<ICommandRunner, CliWrapCommandRunner>();
     }
 }

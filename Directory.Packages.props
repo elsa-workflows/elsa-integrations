@@ -17,7 +17,7 @@
     <PackageVersion Include="CliWrap" Version="3.8.1" />
     <PackageVersion Include="ConfigureAwait.Fody" Version="3.3.2" />
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
-    <PackageVersion Include="Elsa" Version="3.4.0-preview.2684" />
+    <PackageVersion Include="Elsa" Version="3.3.4" />
     <PackageVersion Include="Elsa.Alterations" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Api.Common" Version="3.4.0-preview.2684" />
     <PackageVersion Include="Elsa.Common" Version="3.4.0-preview.2684" />
