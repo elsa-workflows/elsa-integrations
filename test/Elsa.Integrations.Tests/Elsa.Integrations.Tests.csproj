@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Elsa.Testing.Shared.Component" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Elsa.TestServer.Web\Elsa.TestServer.Web.csproj" />
+  </ItemGroup>
+</Project>
