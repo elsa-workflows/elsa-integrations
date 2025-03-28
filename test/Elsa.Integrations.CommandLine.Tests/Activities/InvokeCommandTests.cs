@@ -1,6 +1,6 @@
 using System.Net;
 using Elsa.Integrations.CommandLine.Activities;
-using Elsa.Integrations.Tests.Fixtures;
+using Elsa.Integrations.CommandLine.Tests.Fixtures;
 using Elsa.Testing.Shared;
 using Elsa.Workflows.Models;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,8 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Elsa.Integrations.CommandLine.Tests.Activities;
 
-[Collection(nameof(WorkflowServerCollection))]
-public class InvokeCommandTests(WorkflowServer workflowServer)
+[Collection(nameof(CommandLineWorkflowServerCollection))]
+public class InvokeCommandTests(CommandLineWorkflowServer workflowServer)
 {
     [Fact]
     public async Task InvokeSimpleCommand_CompletesSuccessfully()

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 namespace Elsa.Integrations.CommandLine.Tests.Fixtures;
 
 [UsedImplicitly]
-public class WorkflowServer : WorkflowServerFactory<WorkflowServer>
+public class CommandLineWorkflowServer : WorkflowServerFactory<WorkflowServer>
 {
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
@@ -22,6 +22,7 @@ public class WorkflowServer : WorkflowServerFactory<WorkflowServer>
             .UseJavaScript()
             .UseLiquid()
             .UseDsl()
+            .UseCommandLineIntegration()
             .UseWorkflowManagement()
             .UseWorkflows();
     }
