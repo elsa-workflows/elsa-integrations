@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Adam\.nuget\packages\microsoft.testplatform.testhost\17.13.0\build\netcoreapp3.1\x64\testhost.dll" />
+    <Content Remove="C:\Users\Adam\.nuget\packages\microsoft.testplatform.testhost\17.13.0\build\netcoreapp3.1\x64\testhost.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\Adam\.nuget\packages\xunit.runner.visualstudio\3.0.2\build\net6.0\xunit.abstractions.dll" />
+    <None Remove="C:\Users\Adam\.nuget\packages\xunit.runner.visualstudio\3.0.2\build\net6.0\xunit.runner.visualstudio.testadapter.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AwesomeAssertions" />
+    <PackageReference Include="Elsa.EntityFrameworkCore" />
+    <PackageReference Include="Elsa.Testing.Shared.Integration" />
+    <PackageReference Include="xunit.categories" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Elsa.Integrations.CommandLine\Elsa.Integrations.CommandLine.csproj" />
+    <ProjectReference Include="..\Elsa.Integrations.Tests\Elsa.Integrations.Tests.csproj" />
+  </ItemGroup>
+
+</Project>
