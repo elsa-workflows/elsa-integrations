@@ -3,8 +3,8 @@
         <Authors>Elsa Workflows Community</Authors>
         <Copyright>2025</Copyright>
 
-        <PackageProjectUrl>https://github.com/elsa-workflows/elsa-core</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/elsa-workflows/elsa-core</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/elsa-workflows/elsa-integrations</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/elsa-workflows/elsa-integrations</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
 
         <LangVersion>latest</LangVersion>
@@ -21,12 +21,23 @@
         <AnalysisModeDocumentation>Default</AnalysisModeDocumentation>
         <AnalysisLevelDocumentation>latest</AnalysisLevelDocumentation>
 
+		<NuGetAudit>enable</NuGetAudit>
+		<NuGetAuditMode>all</NuGetAuditMode>
+		
         <!-- https://github.com/dotnet/sourcelink -->
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
-    </PropertyGroup>
-    <PropertyGroup>
-        <ElsaVersion>3.5.0-preview.2783</ElsaVersion>
+
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+	</PropertyGroup>
+	<PropertyGroup>
+		<NoWarn>$(NoWarn);CS0162;CS1591</NoWarn>
+		<!-- IL trimming warnings -->
+		<NoWarn>$(NoWarn);IL2026;IL2046;IL2057;IL2067;IL2070;IL2072;IL2075;IL2087;IL2091</NoWarn>
+	</PropertyGroup>
+    
+	<PropertyGroup Label="PackageVersions">
+        <ElsaVersion>3.6.0-preview.2935</ElsaVersion>
     </PropertyGroup>
 </Project>

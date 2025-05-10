@@ -36,17 +36,19 @@ git checkout -b feature/integration-name
 ```
 Follow the repository's structure when adding a new integration:  
 ```
-Elsa.Integrations.ServiceName/
-  ├── Services/
-  ├── Activities/
-  ├── AI/
+[group-name]/
+  └── Elsa.Integrations.[integration-name]/
+      ├── Services/
+      ├── Activities/
+      ├── AI/
+      ...
 ```
 
 ### 5️⃣ Commit & Push  
 Ensure your code follows the project’s conventions and add meaningful commit messages:
 ```sh
 git add .
-git commit -m "Add support for [integration name]"
+git commit -m "Add support for [integration-name]"
 git push origin feature/integration-name
 ```
 
@@ -65,7 +67,7 @@ Our team will review your PR, provide feedback if necessary, and merge it once a
 ## 🛠 Contribution Guidelines
 
 - **Code Style**: Follow `.editorconfig` settings and existing project conventions.  
-- **Documentation**: Every new integration must have a `README.md` inside its folder explaining how to use it.  
+- **Documentation**: Every integration must have a `README.md` at the root of its group folder or project. See [README-TEMPLATE](https://github.com/elsa-workflows/elsa-integrations/blob/main/README-TEMPLATE.md). 
 - **Tests**: If possible, add unit/integration tests for your changes.  
 
 ---
