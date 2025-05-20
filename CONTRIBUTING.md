@@ -36,7 +36,7 @@ git checkout -b feature/integration-name
 ```
 Follow the repository's structure when adding a new integration:  
 ```
-Elsa.Integrations.ServiceName/
+Elsa.ServiceName/
   ├── Services/
   ├── Activities/
   ├── AI/
