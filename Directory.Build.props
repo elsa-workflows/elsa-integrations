@@ -27,6 +27,7 @@
         <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
     </PropertyGroup>
     <PropertyGroup>
-        <ElsaVersion>3.5.0-preview.2783</ElsaVersion>
+        <ElsaVersion>3.5.0-preview.2981</ElsaVersion>
+        <ElsaStudioVersion>3.5.0-preview.1019</ElsaStudioVersion>
     </PropertyGroup>
 </Project>

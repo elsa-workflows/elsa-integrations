@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{527248D6-B85
 		src\Directory.Build.props = src\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureStorage", "src\Elsa.Integrations.AzureStorage\Elsa.Integrations.AzureStorage.csproj", "{A8666FC4-66E1-4766-A22B-C410D42D03DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.AzureStorage", "src\Elsa.AzureStorage\Elsa.AzureStorage.csproj", "{A8666FC4-66E1-4766-A22B-C410D42D03DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{DE39E491-5DDC-40F4-91D5-7F5FAF0E1884}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,18 +22,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{DE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack", "src\Elsa.Integrations.Slack\Elsa.Integrations.Slack.csproj", "{9732E404-11B5-48DB-B5D9-97997F018830}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Slack", "src\Elsa.Slack\Elsa.Slack.csproj", "{9732E404-11B5-48DB-B5D9-97997F018830}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}"
 	ProjectSection(SolutionItems) = preProject
 		test\Directory.Build.props = test\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Telnyx", "src\Elsa.Integrations.Telnyx\Elsa.Integrations.Telnyx.csproj", "{128B2FC3-81A7-4327-9665-9155B05F21DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Telnyx", "src\Elsa.Telnyx\Elsa.Telnyx.csproj", "{128B2FC3-81A7-4327-9665-9155B05F21DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.OrchardCore", "src\Elsa.Integrations.OrchardCore\Elsa.Integrations.OrchardCore.csproj", "{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.OrchardCore", "src\Elsa.OrchardCore\Elsa.OrchardCore.csproj", "{71D93DC7-A455-4EDC-86DB-826CCEECEEF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureServiceBus", "src\Elsa.Integrations.AzureServiceBus\Elsa.Integrations.AzureServiceBus.csproj", "{BC283CFE-D542-4D40-AE7F-6888B876AA2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.AzureServiceBus", "src\Elsa.AzureServiceBus\Elsa.AzureServiceBus.csproj", "{BC283CFE-D542-4D40-AE7F-6888B876AA2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{D0212324-351E-4CA6-95EE-27754B5367CC}"
 EndProject
@@ -51,31 +51,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "component", "component", "{
 		test\component\Directory.Build.props = test\component\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Slack.Tests", "test\unit\Elsa.Integrations.Slack.Tests\Elsa.Integrations.Slack.Tests.csproj", "{A1ADCCC2-01DD-41BA-8A81-FAAE96EC729D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Slack.Tests", "test\unit\Elsa.Slack.Tests\Elsa.Slack.Tests.csproj", "{A1ADCCC2-01DD-41BA-8A81-FAAE96EC729D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.AzureServiceBus.ComponentTests", "test\component\Elsa.Integrations.AzureServiceBus.ComponentTests\Elsa.Integrations.AzureServiceBus.ComponentTests.csproj", "{2175629F-FA99-4840-9F12-3FE7417706B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.AzureServiceBus.ComponentTests", "test\component\Elsa.AzureServiceBus.ComponentTests\Elsa.AzureServiceBus.ComponentTests.csproj", "{2175629F-FA99-4840-9F12-3FE7417706B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.TestServer.Web", "test\component\Elsa.TestServer.Web\Elsa.TestServer.Web.csproj", "{91D7599F-B4BC-4C2E-A346-56DDCD6F9FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Activities", "src\Elsa.Integrations.Agents.Activities\Elsa.Integrations.Agents.Activities.csproj", "{328F9C5A-60BD-4996-9422-32637BB1A55B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Activities", "src\Elsa.Agents.Activities\Elsa.Agents.Activities.csproj", "{328F9C5A-60BD-4996-9422-32637BB1A55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Api", "src\Elsa.Integrations.Agents.Api\Elsa.Integrations.Agents.Api.csproj", "{2FB8910D-9310-4DA3-9151-80AA401134A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Api", "src\Elsa.Agents.Api\Elsa.Agents.Api.csproj", "{2FB8910D-9310-4DA3-9151-80AA401134A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Core", "src\Elsa.Integrations.Agents.Core\Elsa.Integrations.Agents.Core.csproj", "{293490F1-E0A1-4067-BDEB-E6CE09649749}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Core", "src\Elsa.Agents.Core\Elsa.Agents.Core.csproj", "{293490F1-E0A1-4067-BDEB-E6CE09649749}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Models", "src\Elsa.Integrations.Agents.Models\Elsa.Integrations.Agents.Models.csproj", "{4E6009CF-5525-4AD3-B898-205EC493FB15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Models", "src\Elsa.Agents.Models\Elsa.Agents.Models.csproj", "{4E6009CF-5525-4AD3-B898-205EC493FB15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence", "src\Elsa.Integrations.Agents.Persistence\Elsa.Integrations.Agents.Persistence.csproj", "{863E1AD1-7C87-48B0-8274-A7FE0FC31C60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence", "src\Elsa.Agents.Persistence\Elsa.Agents.Persistence.csproj", "{863E1AD1-7C87-48B0-8274-A7FE0FC31C60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.csproj", "{E441ED7C-A9AF-4CC6-AA4D-02ECD38075CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFCore", "src\Elsa.Agents.Persistence.EFCore\Elsa.Agents.Persistence.EFCore.csproj", "{E441ED7C-A9AF-4CC6-AA4D-02ECD38075CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.MySql", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.MySql\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.MySql.csproj", "{0366AA72-4E2C-4416-A3C9-BB1964EAAB89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFCore.MySql", "src\Elsa.Agents.Persistence.EFCore.MySql\Elsa.Agents.Persistence.EFCore.MySql.csproj", "{0366AA72-4E2C-4416-A3C9-BB1964EAAB89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.PostgreSql", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.PostgreSql\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.PostgreSql.csproj", "{59AE52F2-8F9F-44A2-92E8-ED4EEB895F31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFCore.PostgreSql", "src\Elsa.Agents.Persistence.EFCore.PostgreSql\Elsa.Agents.Persistence.EFCore.PostgreSql.csproj", "{59AE52F2-8F9F-44A2-92E8-ED4EEB895F31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.Sqlite", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.Sqlite\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.Sqlite.csproj", "{4455BAC7-FD3C-4429-A2A2-44A83A331056}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFCore.Sqlite", "src\Elsa.Agents.Persistence.EFCore.Sqlite\Elsa.Agents.Persistence.EFCore.Sqlite.csproj", "{4455BAC7-FD3C-4429-A2A2-44A83A331056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer", "src\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer\Elsa.Integrations.Agents.Persistence.EntityFrameworkCore.SqlServer.csproj", "{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFCore.SqlServer", "src\Elsa.Agents.Persistence.EFCore.SqlServer\Elsa.Agents.Persistence.EFCore.SqlServer.csproj", "{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

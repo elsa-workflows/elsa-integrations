@@ -11,93 +11,93 @@ Below is the current status of each integration. Checkboxes indicate implementat
 ### 📨 Messaging & Communication
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Telegram** | Send & receive messages, file downloads | `Elsa.Integrations.Telegram` |  |
-| [x] | **Slack** | Channel messages, user notifications | `Elsa.Integrations.Slack` | |
-| [ ] | **Discord** | Bot commands, message triggers | `Elsa.Integrations.Discord` | |
-| [ ] | **Microsoft Teams** | Chat automation, meeting reminders | `Elsa.Integrations.Teams` | |
-| [x] | **Telnyx** | Telephony automation | `Elsa.Integrations.Telnyx` | |
+| [ ] | **Telegram** | Send & receive messages, file downloads | `Elsa.Telegram` |  |
+| [x] | **Slack** | Channel messages, user notifications | `Elsa.Slack` | |
+| [ ] | **Discord** | Bot commands, message triggers | `Elsa.Discord` | |
+| [ ] | **Microsoft Teams** | Chat automation, meeting reminders | `Elsa.Teams` | |
+| [x] | **Telnyx** | Telephony automation | `Elsa.Telnyx` | |
 
 ### 📧 Email & Productivity
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Gmail** | Send, receive, label, draft emails | `Elsa.Integrations.Gmail` | |
-| [ ] | **Outlook (Office 365)** | Email management via Microsoft Graph API | `Elsa.Integrations.Outlook` | |
-| [ ] | **Google Calendar** | Event scheduling and updates | `Elsa.Integrations.GoogleCalendar` | |
-| [ ] | **Microsoft Calendar** | Office 365 calendar integration | `Elsa.Integrations.Office365Calendar` | |
+| [ ] | **Gmail** | Send, receive, label, draft emails | `Elsa.Gmail` | |
+| [ ] | **Outlook (Office 365)** | Email management via Microsoft Graph API | `Elsa.Outlook` | |
+| [ ] | **Google Calendar** | Event scheduling and updates | `Elsa.GoogleCalendar` | |
+| [ ] | **Microsoft Calendar** | Office 365 calendar integration | `Elsa.Office365Calendar` | |
 
 ### 🗄️ Storage Services
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Google Drive** | Upload, download, manage files | `Elsa.Integrations.GoogleDrive` | |
-| [ ] | **OneDrive** | File storage and access for Office 365 | `Elsa.Integrations.OneDrive` | |
-| [ ] | **Azure Storage** | Blob storage management | `Elsa.Integrations.AzureStorage` | https://github.com/elsa-workflows/elsa-integrations/issues/1 |
-| [ ] | **Dropbox** | Cloud storage and file sync | `Elsa.Integrations.Dropbox` | |
+| [ ] | **Google Drive** | Upload, download, manage files | `Elsa.GoogleDrive` | |
+| [ ] | **OneDrive** | File storage and access for Office 365 | `Elsa.OneDrive` | |
+| [ ] | **Azure Storage** | Blob storage management | `Elsa.AzureStorage` | https://github.com/elsa-workflows/elsa-integrations/issues/1 |
+| [ ] | **Dropbox** | Cloud storage and file sync | `Elsa.Dropbox` | |
 
 ### 🛠 DevOps & Monitoring
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Azure DevOps** | Pipelines, repositories, work items | `Elsa.Integrations.AzureDevOps` | |
-| [ ] | **GitHub** | PR automation, repo events | `Elsa.Integrations.GitHub` | |
-| [ ] | **GitLab** | CI/CD triggers and repo management | `Elsa.Integrations.GitLab` | |
-| [ ] | **Jenkins** | Pipeline automation and job execution | `Elsa.Integrations.Jenkins` | |
-| [ ] | **Datadog** | Monitoring, logging, and alerts | `Elsa.Integrations.Datadog` | |
+| [ ] | **Azure DevOps** | Pipelines, repositories, work items | `Elsa.AzureDevOps` | |
+| [ ] | **GitHub** | PR automation, repo events | `Elsa.GitHub` | |
+| [ ] | **GitLab** | CI/CD triggers and repo management | `Elsa.GitLab` | |
+| [ ] | **Jenkins** | Pipeline automation and job execution | `Elsa.Jenkins` | |
+| [ ] | **Datadog** | Monitoring, logging, and alerts | `Elsa.Datadog` | |
 
 ### ☁️ Cloud Compute & Serverless
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Azure Functions** | Serverless function triggers | `Elsa.Integrations.AzureFunctions` | |
-| [ ] | **AWS Lambda** | Invoke and trigger Lambda functions | `Elsa.Integrations.AWSLambda` | |
-| [ ] | **Google Cloud Functions** | Event-driven function automation | `Elsa.Integrations.GoogleCloudFunctions` | |
+| [ ] | **Azure Functions** | Serverless function triggers | `Elsa.AzureFunctions` | |
+| [ ] | **AWS Lambda** | Invoke and trigger Lambda functions | `Elsa.AWSLambda` | |
+| [ ] | **Google Cloud Functions** | Event-driven function automation | `Elsa.GoogleCloudFunctions` | |
 
 ### 📊 CRM & Sales Automation
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Salesforce** | Lead management, opportunity tracking | `Elsa.Integrations.Salesforce` | [Open Issue](#) |
-| [ ] | **HubSpot** | Contacts, deals, email automation | `Elsa.Integrations.HubSpot` | [Open Issue](#) |
-| [ ] | **Zoho CRM** | Lead scoring, campaign tracking | `Elsa.Integrations.ZohoCRM` | [Open Issue](#) |
-| [ ] | **Pipedrive** | Sales pipeline automation | `Elsa.Integrations.Pipedrive` | [Open Issue](#) |
+| [ ] | **Salesforce** | Lead management, opportunity tracking | `Elsa.Salesforce` | [Open Issue](#) |
+| [ ] | **HubSpot** | Contacts, deals, email automation | `Elsa.HubSpot` | [Open Issue](#) |
+| [ ] | **Zoho CRM** | Lead scoring, campaign tracking | `Elsa.ZohoCRM` | [Open Issue](#) |
+| [ ] | **Pipedrive** | Sales pipeline automation | `Elsa.Pipedrive` | [Open Issue](#) |
 
 ### 💰 Payments & Finance
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **Stripe** | Payment processing, subscriptions | `Elsa.Integrations.Stripe` | |
-| [ ] | **PayPal** | Transactions, refunds, invoicing | `Elsa.Integrations.PayPal` | |
-| [ ] | **Square** | POS and e-commerce transactions | `Elsa.Integrations.Square` | |
-| [ ] | **QuickBooks** | Invoice and expense automation | `Elsa.Integrations.QuickBooks` | |
+| [ ] | **Stripe** | Payment processing, subscriptions | `Elsa.Stripe` | |
+| [ ] | **PayPal** | Transactions, refunds, invoicing | `Elsa.PayPal` | |
+| [ ] | **Square** | POS and e-commerce transactions | `Elsa.Square` | |
+| [ ] | **QuickBooks** | Invoice and expense automation | `Elsa.QuickBooks` | |
 
 ### 🤖 AI & Automation
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **OpenAI** | GPT-based text generation, chatbots | `Elsa.Integrations.OpenAI` | |
-| [ ] | **Google AI** | AI-enhanced search, translation | `Elsa.Integrations.GoogleAI` | |
-| [ ] | **AWS Comprehend** | NLP services for text analysis | `Elsa.Integrations.AWSComprehend` | |
-| [ ] | **Azure AI** | Vision, speech, language processing | `Elsa.Integrations.AzureAI` | |
+| [ ] | **OpenAI** | GPT-based text generation, chatbots | `Elsa.OpenAI` | |
+| [ ] | **Google AI** | AI-enhanced search, translation | `Elsa.GoogleAI` | |
+| [ ] | **AWS Comprehend** | NLP services for text analysis | `Elsa.AWSComprehend` | |
+| [ ] | **Azure AI** | Vision, speech, language processing | `Elsa.AzureAI` | |
 
 ### 🎥 Video & Streaming Platforms
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **YouTube** | Upload videos, retrieve video details, manage playlists | `Elsa.Integrations.YouTube` | [Open Issue](#) |
-| [ ] | **Rumble** | Upload videos, fetch channel videos, manage content | `Elsa.Integrations.Rumble` | [Open Issue](#) |
-| [ ] | **Twitch** | Live stream events, chat automation, clip management | `Elsa.Integrations.Twitch` | [Open Issue](#) |
-| [ ] | **Vimeo** | Upload videos, manage privacy settings, get video analytics | `Elsa.Integrations.Vimeo` | [Open Issue](#) |
+| [ ] | **YouTube** | Upload videos, retrieve video details, manage playlists | `Elsa.YouTube` | [Open Issue](#) |
+| [ ] | **Rumble** | Upload videos, fetch channel videos, manage content | `Elsa.Rumble` | [Open Issue](#) |
+| [ ] | **Twitch** | Live stream events, chat automation, clip management | `Elsa.Twitch` | [Open Issue](#) |
+| [ ] | **Vimeo** | Upload videos, manage privacy settings, get video analytics | `Elsa.Vimeo` | [Open Issue](#) |
 
 ### 🏭 Industrial Communication Protocols
 | Status | Integration | Description | Module Name | Issue |
 |--------|------------|-------------|-------------|-------|
-| [ ] | **OPC UA** | Browse nodes, Read/Write values, Subscribe/Unsubscribe nodes | `Elsa.Integrations.OPC.UA` | |
-| [ ] | **Modbus** | Read/Write coils, Read discrete Inputs, Read/Write registers | `Elsa.Integrations.Modbus` | |
-| [ ] | **MQTT Sparkplug** | Discover and Subscribe to topics, Publish messages | `Elsa.Integrations.MQTT.Sparkplug` | |
+| [ ] | **OPC UA** | Browse nodes, Read/Write values, Subscribe/Unsubscribe nodes | `Elsa.OPC.UA` | |
+| [ ] | **Modbus** | Read/Write coils, Read discrete Inputs, Read/Write registers | `Elsa.Modbus` | |
+| [ ] | **MQTT Sparkplug** | Discover and Subscribe to topics, Publish messages | `Elsa.MQTT.Sparkplug` | |
 ---
 
 ## 📦 Structure
-Each integration is structured as a standalone package under the `Elsa.Integrations` namespace. Example:
+Each integration is structured as a standalone package under the `Elsa` namespace. Example:
 
 ```
-Elsa.Integrations.Gmail/
+Elsa.Gmail/
   ├── Services/
   ├── Activities/
   ├── AI/
-Elsa.Integrations.Telegram/
+Elsa.Telegram/
   ├── Services/
   ├── Activities/
   ├── AI/
@@ -106,7 +106,7 @@ Elsa.Integrations.Telegram/
 ## ⚡ Getting Started
 To install a specific integration:
 ```sh
-dotnet add package Elsa.Integrations.Gmail
+dotnet add package Elsa.Gmail
 ```
 To enable it in Elsa Workflows:
 ```csharp
