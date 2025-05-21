@@ -13,8 +13,4 @@
       <ProjectReference Include="..\Elsa.Agents.Core\Elsa.Agents.Core.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <PackageVersion Update="Elsa.Common" Version="3.4.0-preview.2684" />
-    </ItemGroup>
-
 </Project>
