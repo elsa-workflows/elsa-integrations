@@ -27,7 +27,7 @@ public class StartWorkers(ITriggerStore triggerStore, IBookmarkStore bookmarkSto
         var triggerStimuli = (await triggerStore.FindManyAsync(triggerFilter, cancellationToken)).Select(x => x.GetPayload<MessageReceivedStimulus>()).ToList();
         var bookmarkFilter = new BookmarkFilter
         {
-            ActivityTypeName = activityType
+            Name = activityType
         };
         var bookmarkStimuli = (await bookmarkStore.FindManyAsync(bookmarkFilter, cancellationToken)).Select(x => x.GetPayload<MessageReceivedStimulus>()).ToList();
         var stimuli = triggerStimuli.Concat(bookmarkStimuli).ToList();
