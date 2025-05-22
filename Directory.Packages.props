@@ -128,6 +128,7 @@
     <PackageVersion Include="Refit.HttpClientFactory" Version="8.0.0" />
     <PackageVersion Include="Scrutor" Version="6.0.1" />
     <PackageVersion Include="SlackNet" Version="0.16.1" />
+    <PackageVersion Include="Discord.Net" Version="3.15.1" />
     <PackageVersion Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
     <PackageVersion Include="System.Data.SqlClient" Version="4.9.0" />
     <PackageVersion Include="System.Formats.Asn1" Version="9.0.5" />

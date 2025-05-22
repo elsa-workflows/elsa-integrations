@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Provides integration with Discord.</Description>
+    <PackageTags>elsa extension module discord</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Elsa" />
+    <PackageReference Include="Discord.Net" />
+  </ItemGroup>
+</Project>

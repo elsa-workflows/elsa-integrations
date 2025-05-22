@@ -18,7 +18,7 @@ Below is the current status of each extension. Icons indicate implementation pro
 |--------|------------|-------------|-------------|-------|
 | 🔲 | **Telegram** | Send & receive messages, file downloads | `Elsa.Telegram` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
 | [✅]( https://github.com/elsa-workflows/elsa-extensions/tree/main/src/slack/Elsa.Slack) | **Slack** | Channel messages, user notifications | `Elsa.Slack` | [View Issue](https://github.com/elsa-workflows/elsa-extensions/issues/26) |
-| 🔲 | **Discord** | Bot commands, message triggers | `Elsa.Discord` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
+| 🚧 | **Discord** | Bot commands, message triggers | `Elsa.Discord` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
 | 🔲 | **Microsoft Teams** | Chat automation, meeting reminders | `Elsa.Teams` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
 | [✅](https://github.com/elsa-workflows/elsa-extensions/tree/main/src/telnyx/Elsa.Telnyx) | **Telnyx** | Telephony automation | `Elsa.Telnyx` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
 
