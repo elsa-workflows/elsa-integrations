@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Provides weather data retrieval activities for Elsa Workflows.</Description>
+    <PackageTags>elsa extension module weather</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Elsa" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+  </ItemGroup>
+</Project>

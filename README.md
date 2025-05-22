@@ -100,6 +100,12 @@ Below is the current status of each extension. Icons indicate implementation pro
 | 🔲 | **OPC UA** | Browse nodes, Read/Write values, Subscribe/Unsubscribe nodes | `Elsa.OPC.UA` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
 | 🔲 | **Modbus** | Read/Write coils, Read discrete Inputs, Read/Write registers | `Elsa.Modbus` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
 | 🔲 | **MQTT Sparkplug** | Discover and Subscribe to topics, Publish messages | `Elsa.MQTT.Sparkplug` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
+### 🌦 Weather Services
+| Status | Extension | Description | Module Name | Issue |
+|--------|-----------|-------------|-------------|-------|
+| ✅ | **Weather** | Retrieve current weather information | `Elsa.Weather` | [Open Issue](https://github.com/elsa-workflows/elsa-extensions/issues/new) |
+
+
 
 ---
 

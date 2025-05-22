@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\weather\Elsa.Weather\Elsa.Weather.csproj" />
+    <PackageReference Include="NSubstitute" />
+  </ItemGroup>
+</Project>

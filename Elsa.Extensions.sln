@@ -59,6 +59,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "slack", "slack", "{897A92CE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "telnyx", "telnyx", "{44E2676B-6F07-44F1-9FAB-4A961A1ECEDE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "weather", "weather", "{B2E2C237-FAE8-4593-9D48-F5FC92945896}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Sql", "src\sql\Elsa.Sql\Elsa.Sql.csproj", "{4B5DB45A-2716-1FDE-8EC7-1AC75FFA30F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Sql.MySql", "src\sql\Elsa.Sql.MySql\Elsa.Sql.MySql.csproj", "{78CBE43C-0EF2-048E-987B-A603A38099E6}"
@@ -74,6 +76,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Slack", "src\slack\Elsa.Slack\Elsa.Slack.csproj", "{F772399E-3E59-4CCD-38F3-36D8B6DB619F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Slack.Tests", "test\unit\Elsa.Slack.Tests\Elsa.Slack.Tests.csproj", "{04D19A18-4B5C-4D12-A677-5E7183D9D84F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Weather", "src\weather\Elsa.Weather\Elsa.Weather.csproj", "{7638F3D5-C267-4AE1-B3CD-5D9D8FB867EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Weather.Tests", "test\unit\Elsa.Weather.Tests\Elsa.Weather.Tests.csproj", "{60A943B9-3C9D-4ACC-870F-330936197BBE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.OrchardCore", "src\orchardcore\Elsa.OrchardCore\Elsa.OrchardCore.csproj", "{15F6D43F-75F5-1938-541A-DDEBCBC97D91}"
 EndProject
@@ -303,6 +309,14 @@ Global
 		{04D19A18-4B5C-4D12-A677-5E7183D9D84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D19A18-4B5C-4D12-A677-5E7183D9D84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D19A18-4B5C-4D12-A677-5E7183D9D84F}.Release|Any CPU.Build.0 = Release|Any CPU
+                {7638F3D5-C267-4AE1-B3CD-5D9D8FB867EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {7638F3D5-C267-4AE1-B3CD-5D9D8FB867EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {7638F3D5-C267-4AE1-B3CD-5D9D8FB867EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {7638F3D5-C267-4AE1-B3CD-5D9D8FB867EF}.Release|Any CPU.Build.0 = Release|Any CPU
+                {60A943B9-3C9D-4ACC-870F-330936197BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {60A943B9-3C9D-4ACC-870F-330936197BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {60A943B9-3C9D-4ACC-870F-330936197BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {60A943B9-3C9D-4ACC-870F-330936197BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{15F6D43F-75F5-1938-541A-DDEBCBC97D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{15F6D43F-75F5-1938-541A-DDEBCBC97D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15F6D43F-75F5-1938-541A-DDEBCBC97D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -717,6 +731,8 @@ Global
 		{E3AF86CC-B571-40A2-B44F-F48B17EB9325} = {A99FA26E-2098-403A-BD04-6BBCFBE3AC7D}
 		{1DA73581-F279-95FC-9485-B73D8A9FC727} = {E3AF86CC-B571-40A2-B44F-F48B17EB9325}
 		{59C29BC8-ED95-8F0B-323E-A988EADF3D38} = {AF041BAE-B45A-428B-B7F5-921CCB895558}
+                {60A943B9-3C9D-4ACC-870F-330936197BBE} = {B2E2C237-FAE8-4593-9D48-F5FC92945896}
+                {7638F3D5-C267-4AE1-B3CD-5D9D8FB867EF} = {B2E2C237-FAE8-4593-9D48-F5FC92945896}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11A771DA-B728-445E-8A88-AE1C84C3B3A6}
