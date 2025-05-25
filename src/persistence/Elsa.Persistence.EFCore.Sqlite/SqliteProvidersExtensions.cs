@@ -68,8 +68,10 @@ public static class SqliteProvidersExtensions
         where TDbContext : ElsaDbContextBase
         where TFeature : PersistenceFeatureBase<TFeature, TDbContext>
     {
+        // Setup SQLite-specific handler for Entity Framework Core limitations
+        SetupForSqlite.AddSetupForSqliteHandler(feature.Module.Services);
         
-        feature.Module.Services.TryAddScopedImplementation<IEntityModelCreatingHandler, SetupForSqlite>();
+        // Configure the DbContextOptions to use SQLite
         feature.DbContextOptionsBuilder = (sp, db) => db.UseElsaSqlite(migrationsAssembly, connectionStringFunc(sp), options, configure: configure);
         return (TFeature)feature;
     }
