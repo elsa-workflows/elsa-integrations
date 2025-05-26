@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Elsa.Persistence.EFCore.Sqlite;
 
@@ -12,6 +13,7 @@ public class SetupForSqlite : IEntityModelCreatingHandler
     /// <inheritdoc />
     public void Handle(ElsaDbContextBase dbContext, ModelBuilder modelBuilder, IMutableEntityType entityType)
     {
+        // First check if this is a SQLite database - if not, don't do anything
         if(!dbContext.Database.IsSqlite())
             return;
         
@@ -26,5 +28,14 @@ public class SetupForSqlite : IEntityModelCreatingHandler
                 .Property(property.Name)
                 .HasConversion(new DateTimeOffsetToStringConverter());
         }
+    }
+
+    /// <summary>
+    /// Registers the handler with the service collection if it's not already registered.
+    /// </summary>
+    public static IServiceCollection AddSetupForSqliteHandler(IServiceCollection services)
+    {
+        services.AddScoped<IEntityModelCreatingHandler, SetupForSqlite>();
+        return services;
     }
 }
