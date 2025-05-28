@@ -173,6 +173,17 @@ public class Store<TDbContext, TEntity>(IDbContextFactory<TDbContext> dbContextF
         if (entityList.Count == 0)
             return;
 
+        // Check if there are any IEntitySavingHandler instances registered
+        // If so, fall back to individual SaveAsync calls to ensure handlers are invoked
+        var entitySavingHandlers = serviceProvider.GetServices<IEntitySavingHandler>().ToList();
+        if (entitySavingHandlers.Count > 0)
+        {
+            // Fall back to individual saves to ensure IEntitySavingHandler instances are called
+            var saveTasks = entityList.Select(entity => SaveAsync(entity, keySelector, onSaving, cancellationToken)).ToList();
+            await Task.WhenAll(saveTasks);
+            return;
+        }
+
         await using var dbContext = await CreateDbContextAsync(cancellationToken);
 
         if (onSaving != null)
