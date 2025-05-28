@@ -2,6 +2,8 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.Extensions.DependencyInjection;
 using System.Linq.Expressions;
 
 // ReSharper disable once CheckNamespace
@@ -55,6 +57,40 @@ public static class BulkUpsertExtensions
     {
         if (entities.Count == 0)
             return;
+            
+        // Call entity saving handlers if this is an ElsaDbContextBase and handlers are registered
+        if (dbContext is ElsaDbContextBase elsaDbContext)
+        {
+            var serviceProvider = elsaDbContext.GetService<IServiceProvider>();
+            var entitySavingHandlers = serviceProvider.GetServices<IEntitySavingHandler>().ToList();
+            
+            if (entitySavingHandlers.Count > 0)
+            {
+                // Process each entity through the handlers
+                foreach (var entity in entities)
+                {
+                    // Attach entity temporarily to create EntityEntry
+                    var entry = dbContext.Entry(entity);
+                    
+                    // Determine proper EntityState based on whether it exists
+                    var keyPropertyInfo = keySelector.GetMemberAccess().Member as System.Reflection.PropertyInfo;
+                    if (keyPropertyInfo != null)
+                    {
+                        var keyValue = keyPropertyInfo.GetValue(entity) as string;
+                        entry.State = !string.IsNullOrEmpty(keyValue) ? EntityState.Modified : EntityState.Added;
+                    }
+                    
+                    // Call each handler
+                    foreach (var handler in entitySavingHandlers)
+                    {
+                        await handler.HandleAsync(elsaDbContext, entry, cancellationToken);
+                    }
+                    
+                    // Detach the entity to avoid duplicate tracking
+                    entry.State = EntityState.Detached;
+                }
+            }
+        }
 
         // Identify the current provider (e.g., "Microsoft.EntityFrameworkCore.SqlServer")
         var providerName = dbContext.Database.ProviderName?.ToLowerInvariant() ?? string.Empty;
