@@ -66,6 +66,9 @@ public static class BulkUpsertExtensions
             
             if (entitySavingHandlers.Count > 0)
             {
+                // Get key property info once since it's the same for all entities
+                var keyPropertyInfo = keySelector.GetMemberAccess().Member as System.Reflection.PropertyInfo;
+                
                 // Process each entity through the handlers
                 foreach (var entity in entities)
                 {
@@ -73,7 +76,6 @@ public static class BulkUpsertExtensions
                     var entry = dbContext.Entry(entity);
                     
                     // Determine proper EntityState based on whether it exists
-                    var keyPropertyInfo = keySelector.GetMemberAccess().Member as System.Reflection.PropertyInfo;
                     if (keyPropertyInfo != null)
                     {
                         var keyValue = keyPropertyInfo.GetValue(entity) as string;
