@@ -3,42 +3,48 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
     </PropertyGroup>
+    <PropertyGroup>
+        <ElsaVersion>3.5.0-preview.3030</ElsaVersion>
+        <ElsaStudioVersion>3.5.0-preview.1058</ElsaStudioVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageVersion Include="Elsa" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Alterations" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Common" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.EntityFrameworkCore" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.EntityFrameworkCore.Common" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.EntityFrameworkCore.MySql" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.EntityFrameworkCore.Sqlite" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.EntityFrameworkCore.SqlServer" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.EntityFrameworkCore.PostgreSql" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Features" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.JavaScript" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Workflows.Core" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Workflows.Api" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Http" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Identity" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.MassTransit" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.MassTransit.RabbitMq" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Webhooks" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Workflows.Management" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Workflows.Runtime" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)"/>
+        <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)"/>
+    </ItemGroup>
     <ItemGroup>
         <PackageVersion Include="Azure.Identity" Version="1.14.0"/>
         <PackageVersion Include="Azure.Messaging.ServiceBus" Version="7.19.0"/>
         <PackageVersion Include="Azure.ResourceManager" Version="1.13.1"/>
-        <PackageVersion Include="Azure.ResourceManager.AppContainers" Version="1.3.0"/>
+        <PackageVersion Include="Azure.ResourceManager.AppContainers" Version="1.4.0"/>
         <PackageVersion Include="Azure.ResourceManager.Resources" Version="1.9.1"/>
         <PackageVersion Include="Azure.ResourceManager.ServiceBus" Version="1.1.0"/>
         <PackageVersion Include="Azure.Storage.Blobs" Version="12.24.0"/>
-        <PackageVersion Include="BenchmarkDotNet" Version="0.14.0"/>
+        <PackageVersion Include="BenchmarkDotNet" Version="0.15.0"/>
         <PackageVersion Include="Bogus" Version="35.6.3"/>
         <PackageVersion Include="ConfigureAwait.Fody" Version="3.3.2"/>
         <PackageVersion Include="coverlet.collector" Version="6.0.4"/>
-        <PackageVersion Include="Elsa" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Alterations" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Api.Common" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Common" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.EntityFrameworkCore" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.EntityFrameworkCore.Common" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.EntityFrameworkCore.MySql" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.EntityFrameworkCore.Sqlite" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.EntityFrameworkCore.SqlServer" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.EntityFrameworkCore.PostgreSql" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Features" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.JavaScript" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Workflows.Core" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Workflows.Api" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Http" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Identity" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.MassTransit" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.MassTransit.RabbitMq" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Webhooks" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Workflows.Management" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Workflows.Runtime" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Tenants" Version="3.5.0-preview.2981"/>
-        <PackageVersion Include="Elsa.Testing.Shared.Component" Version="3.5.0-preview.2981"/>
         <PackageVersion Include="FastEndpoints" Version="6.1.0"/>
         <PackageVersion Include="FastEndpoints.Security" Version="6.1.0"/>
         <PackageVersion Include="FastEndpoints.Swagger" Version="6.1.0"/>
@@ -76,8 +82,8 @@
         <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.5"/>
         <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="9.0.5"/>
         <PackageVersion Include="Microsoft.Extensions.AI" Version="9.5.0" />
-        <PackageVersion Include="Microsoft.SemanticKernel" Version="1.53.0"/>
-        <PackageVersion Include="Microsoft.SemanticKernel.Core" Version="1.53.0"/>
+        <PackageVersion Include="Microsoft.SemanticKernel" Version="1.54.0"/>
+        <PackageVersion Include="Microsoft.SemanticKernel.Core" Version="1.54.0"/>
         <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
         <PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.3.efcore.9.0.0"/>
         <PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="9.0.5" />

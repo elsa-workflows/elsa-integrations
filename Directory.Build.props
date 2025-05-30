@@ -26,8 +26,4 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
     </PropertyGroup>
-    <PropertyGroup>
-        <ElsaVersion>3.5.0-preview.2993</ElsaVersion>
-        <ElsaStudioVersion>3.5.0-preview.1019</ElsaStudioVersion>
-    </PropertyGroup>
 </Project>
