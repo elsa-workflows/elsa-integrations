@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Agents.Persistence.EFCore.SqlServer", "src\Elsa.Agents.Persistence.EFCore.SqlServer\Elsa.Agents.Persistence.EFCore.SqlServer.csproj", "{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elsa.Studio.Agents", "src\Elsa.Studio.Agents\Elsa.Studio.Agents.csproj", "{C8CC28AC-8D95-4996-9520-6387E18B1CC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,10 @@ Global
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CC28AC-8D95-4996-9520-6387E18B1CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CC28AC-8D95-4996-9520-6387E18B1CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CC28AC-8D95-4996-9520-6387E18B1CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CC28AC-8D95-4996-9520-6387E18B1CC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,5 +187,6 @@ Global
 		{59AE52F2-8F9F-44A2-92E8-ED4EEB895F31} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{4455BAC7-FD3C-4429-A2A2-44A83A331056} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 		{4955F8F7-B4D2-4695-9C29-A2DC9DDCD8E2} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
+		{C8CC28AC-8D95-4996-9520-6387E18B1CC5} = {527248D6-B851-4C8D-8667-E2FB0A91DABF}
 	EndGlobalSection
 EndGlobal

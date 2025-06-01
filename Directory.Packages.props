@@ -4,10 +4,10 @@
         <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
     </PropertyGroup>
     <PropertyGroup>
-        <ElsaVersion>3.5.0-preview.3030</ElsaVersion>
-        <ElsaStudioVersion>3.5.0-preview.1058</ElsaStudioVersion>
+        <ElsaVersion>3.5.0-rc1</ElsaVersion>
+        <ElsaStudioVersion>3.5.0-rc1</ElsaStudioVersion>
     </PropertyGroup>
-    <ItemGroup>
+    <ItemGroup Label="Elsa">
         <PackageVersion Include="Elsa" Version="$(ElsaVersion)"/>
         <PackageVersion Include="Elsa.Alterations" Version="$(ElsaVersion)"/>
         <PackageVersion Include="Elsa.Api.Common" Version="$(ElsaVersion)"/>
@@ -32,6 +32,11 @@
         <PackageVersion Include="Elsa.Workflows.Runtime.ProtoActor" Version="$(ElsaVersion)"/>
         <PackageVersion Include="Elsa.Tenants" Version="$(ElsaVersion)"/>
         <PackageVersion Include="Elsa.Testing.Shared.Component" Version="$(ElsaVersion)"/>
+    </ItemGroup>
+    <ItemGroup Label="Elsa Studio">
+        <PackageVersion Include="Elsa.Studio.Shared" Version="$(ElsaStudioVersion)"/>
+        <PackageVersion Include="Elsa.Studio.Workflows.Core" Version="$(ElsaStudioVersion)"/>
+        <PackageVersion Include="Elsa.Studio.Workflows" Version="$(ElsaStudioVersion)"/>
     </ItemGroup>
     <ItemGroup>
         <PackageVersion Include="Azure.Identity" Version="1.14.0"/>
@@ -81,12 +86,12 @@
         <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.5"/>
         <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.5"/>
         <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="9.0.5"/>
-        <PackageVersion Include="Microsoft.Extensions.AI" Version="9.5.0" />
+        <PackageVersion Include="Microsoft.Extensions.AI" Version="9.5.0"/>
         <PackageVersion Include="Microsoft.SemanticKernel" Version="1.54.0"/>
         <PackageVersion Include="Microsoft.SemanticKernel.Core" Version="1.54.0"/>
         <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4"/>
         <PackageVersion Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-preview.3.efcore.9.0.0"/>
-        <PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="9.0.5" />
+        <PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="9.0.5"/>
         <PackageVersion Include="System.Text.Json" Version="9.0.5"/>
     </ItemGroup>
 </Project>
