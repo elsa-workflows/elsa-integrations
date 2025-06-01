@@ -5,7 +5,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <ElsaVersion>3.5.0-rc1</ElsaVersion>
-        <ElsaStudioVersion>3.5.0-rc1</ElsaStudioVersion>
+        <ElsaStudioVersion>3.5.0-rc2</ElsaStudioVersion>
     </PropertyGroup>
     <ItemGroup Label="Elsa">
         <PackageVersion Include="Elsa" Version="$(ElsaVersion)"/>
