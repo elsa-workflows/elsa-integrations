@@ -7,6 +7,26 @@
         <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\modules\Elsa.Workflows.Core\Elsa.Workflows.Core.csproj"/>
     </ItemGroup>
 
+    <!-- Elsa.Agents.Activities -->
+    <ItemGroup Condition="'$(UseProjectReferences)' == 'true' and '$(MSBuildProjectName)' == 'Elsa.Agents.Activities'">
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\modules\Elsa\Elsa.csproj"/>
+    </ItemGroup>
+
+    <!-- Elsa.Agents.Api -->
+    <ItemGroup Condition="'$(UseProjectReferences)' == 'true' and '$(MSBuildProjectName)' == 'Elsa.Agents.Api'">
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\common\Elsa.Api.Common\Elsa.Api.Common.csproj"/>
+    </ItemGroup>
+
+    <!-- Elsa.Agents.Core -->
+    <ItemGroup Condition="'$(UseProjectReferences)' == 'true' and '$(MSBuildProjectName)' == 'Elsa.Agents.Core'">
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\modules\Elsa.Common\Elsa.Common.csproj"/>
+    </ItemGroup>
+
+    <!-- Elsa.Agents.Persistence -->
+    <ItemGroup Condition="'$(UseProjectReferences)' == 'true' and '$(MSBuildProjectName)' == 'Elsa.Agents.Persistence'">
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\modules\Elsa.Common\Elsa.Common.csproj"/>
+    </ItemGroup>
+
     <!-- Elsa.Alterations -->
     <ItemGroup Condition="'$(UseProjectReferences)' == 'true' and '$(MSBuildProjectName)' == 'Elsa.Alterations'">
         <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\core\src\common\Elsa.Api.Common\Elsa.Api.Common.csproj"/>

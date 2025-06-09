@@ -21,7 +21,6 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<ProjectReference Include="..\..\alterations\Elsa.Alterations\Elsa.Alterations.csproj" />
 		<ProjectReference Include="..\..\labels\Elsa.Labels\Elsa.Labels.csproj" />
 	</ItemGroup>
 	
