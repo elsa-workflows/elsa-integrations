@@ -1,14 +1,12 @@
 using System.Text.Json;
-using Microsoft.SemanticKernel;
 
 namespace Elsa.Agents;
 
-public record InvokeAgentResult(AgentConfig Function, FunctionResult FunctionResult)
+public record InvokeAgentResult(AgentConfig Function, string Response)
 {
     public object? ParseResult()
     {
         var targetType = Type.GetType(Function.OutputVariable.Type) ?? typeof(JsonElement);
-        var json = FunctionResult.GetValue<string>();
-        return JsonSerializer.Deserialize(json, targetType);
+        return JsonSerializer.Deserialize(Response, targetType);
     }
 }

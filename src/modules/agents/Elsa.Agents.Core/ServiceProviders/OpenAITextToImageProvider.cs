@@ -1,4 +1,6 @@
 using Microsoft.SemanticKernel;
+using Microsoft.Extensions.AI;
+using System;
 #pragma warning disable SKEXP0010
 
 namespace Elsa.Agents;
@@ -13,4 +15,6 @@ public class OpenAITextToImageProvider : IAgentServiceProvider
         var apiKey = context.GetApiKey();
         context.KernelBuilder.AddOpenAITextToImage(apiKey, modelId: modelId);
     }
+
+    public IChatClient CreateChatClient(ChatClientContext context) => throw new NotSupportedException();
 }

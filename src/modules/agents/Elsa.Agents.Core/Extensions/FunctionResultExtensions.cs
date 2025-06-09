@@ -1,5 +1,5 @@
 using System.Text.Json;
-using Microsoft.SemanticKernel;
+
 
 namespace Elsa.Agents;
 
@@ -8,18 +8,6 @@ public static class FunctionResultExtensions
     public static async Task<JsonElement> AsJsonElementAsync(this Task<InvokeAgentResult> resultTask)
     {
         var result = await resultTask;
-        return result.FunctionResult.AsJsonElement();
-    }
-    
-    public static async Task<JsonElement> AsJsonElementAsync(this Task<FunctionResult> resultTask)
-    {
-        var result = await resultTask;
-        return result.AsJsonElement();
-    }
-    
-    public static JsonElement AsJsonElement(this FunctionResult result)
-    {
-        var response = result.GetValue<string>()!;
-        return JsonSerializer.Deserialize<JsonElement>(response);
+        return JsonSerializer.Deserialize<JsonElement>(result.Response);
     }
 }

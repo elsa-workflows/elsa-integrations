@@ -27,6 +27,7 @@ public class AgentsFeature(IModule module) : FeatureBase(module)
 
         Services
             .AddScoped<KernelFactory>()
+            .AddScoped<ChatClientFactory>()
             .AddScoped<AgentInvoker>()
             .AddScoped<IPluginDiscoverer, PluginDiscoverer>()
             .AddScoped<IServiceDiscoverer, ServiceDiscoverer>()

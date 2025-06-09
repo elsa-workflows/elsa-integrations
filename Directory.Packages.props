@@ -123,9 +123,13 @@
     <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="9.0.5" />
     <PackageVersion Include="Microsoft.Extensions.Options" Version="9.0.5" />
     <PackageVersion Include="Microsoft.Extensions.Resilience" Version="9.5.0" />
+    <PackageVersion Include="Microsoft.Extensions.AI.Abstractions" Version="0.2.0-preview.3" />
+    <PackageVersion Include="Microsoft.Extensions.AI" Version="0.2.0-preview.3" />
+    <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="0.2.0-preview.3" />
+    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.53.1" />
+    <PackageVersion Include="Azure.AI.OpenAI" Version="1.0.0" />
     <PackageVersion Include="Microsoft.Identity.Client" Version="4.72.1" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
-    <PackageVersion Include="Microsoft.SemanticKernel" Version="1.53.1" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="MongoDB.Driver" Version="3.4.0" />
     <PackageVersion Include="MongoDB.Driver.Core.Extensions.DiagnosticSources" Version="2.1.0" />
